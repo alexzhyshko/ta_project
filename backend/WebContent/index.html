@@ -3,11 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <title>Shop</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<form action="Controller" method ="post" id="search_form">
-<input type="text" name="search_query" placeholder="Search..." id="search_text">
-<input type="submit" value="search" id="search_button">
-</form>
+<div id="wrapper">
+<div id="header">
+</div>
+<div id="content">
+
+	<form action="Controller" method="post" id="search_form">
+		<input type="text" class="search_query form-control" id="usr"
+			name="search_query" placeholder="Search..." required> </br> <input
+			type="radio" name="search_choice" value="word"> Search by
+		word </br> <input type="radio" name="search_choice" value="category">
+		Search by category </br> <input type="submit" class="btn btn-primary"
+			value="search" id="search_button">
+	</form>
+	
+</div>
+<div id="footer">
+</div>
 </body>
 </html>
